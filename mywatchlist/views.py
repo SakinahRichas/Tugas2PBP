@@ -6,8 +6,18 @@ from django.core import serializers
 
 def show_mywatchlist(request):
     data_mywatchlist = MyWatchList.objects.all()
+    
+    sudahDitonton = MyWatchList.objects.filter(watched=True).count()
+    belumDitonton = MyWatchList.objects.filter(watched=False).count()
+
+    if sudahDitonton >= belumDitonton:
+        pesan = "Selamat, kamu sudah banyak menonton!"
+    else:
+        pesan = "Wah, kamu masih sedikit menonton!"
+
     context = {
         'list_mywatch' : data_mywatchlist,
+        'pesan' : pesan,
         'nama' : 'Sakinah Richas',
         'studentid' : '2106751511'
     }
