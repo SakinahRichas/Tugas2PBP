@@ -1,0 +1,123 @@
+[
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":1,
+        "fields":{
+            "watched": true,
+            "title":"Coco",
+            "rating": 5,
+            "release_date": "2017-11-22",
+            "review": "Animasinya keren banget, ceritanya juga baguss"
+        
+        }
+
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":2,
+        "fields":{
+            "watched": false,
+            "title":"Mencuri Raden Saleh",
+            "rating": 5,
+            "release_date": "2022-08-25",
+            "review": "Film terbaik 2022"
+        
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":3,
+        "fields":{
+            "watched": true,
+            "title":"Fabricated City",
+            "rating": 5,
+            "release_date": "2020-05-12",
+            "review": "Plotnya seru bangettt"
+        
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":4,
+        "fields":{
+            "watched": true,
+            "title":"Enola Holmes",
+            "rating": 4,
+            "release_date": "2020-09-23",
+            "review": "Film nya baguss, menceritakan tentang adiknya Sherlock Holmes"
+        
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":5,
+        "fields":{
+            "watched": true,
+            "title":"Laskar Pelangi",
+            "rating": 5,
+            "release_date": "2008-09-25",
+            "review": "Bagusss"
+        
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":6,
+        "fields":{
+            "watched": false,
+            "title":"Spider-Man: No Way Home",
+            "rating":4,
+            "release_date": "2021-12-15",
+            "review": "Amazing!!"
+        
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":7,
+        "fields":{
+            "watched": false,
+            "title":"Stranger Things Season 4",
+            "rating": 5,
+            "release_date": "2022-05-27",
+            "review": "Film nya bagusssssss"
+        
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":8,
+        "fields":{
+            "watched": true,
+            "title":"Train to Busan",
+            "rating": 4,
+            "release_date": "2016-05-13",
+            "review": "Menegangkannnn"
+        
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":9,
+        "fields":{
+            "watched": false,
+            "title":"Luca",
+            "rating": 3,
+            "release_date": "2021-06-18",
+            "review": "Good!!"
+        
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":10,
+        "fields":{
+            "watched": true,
+            "title":"Encanto",
+            "rating": 5,
+            "release_date": "2021-11-24",
+            "review": "Ceritanya bagusss"
+        
+        }
+    }
+]
