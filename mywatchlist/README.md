@@ -27,6 +27,14 @@
 
     Setelahnya saya deploy ke herokuapp. Lanjut, saya membuat test.py sesuai dengan kode yang ada dislide scele. Awalnya saat saya menjalankan 'pyhon manage.py test' test nya tidak muncul hanya 'Ran 0 test' setelah melihat discord, saya membuat folder css dan membuat file style.css sesuai dengan petunjuk asdos. lalu menjalankan command 'python manage.py collectstatic'. sehingga test saya berhasil.
 
+    Saya lanjut mengerjakan bonus, yaitu dengan menambahkan variabel sudahDitonton (jika watched = true) dan belumDitonton (jika watched = false). lalu membuat kondisi, jika sudahDitonton lebih banyak dibanding belumDitonton, maka pesan = "Selamat kamu sudah banyak menonton", jika lebih sedikit maka pesan = "wah, kamu sedikit menonton". Lalu, di contextnya saya tambahkan ''pesan' : pesan, '
+
+    Lanjut, saya tambahkan pada mywatchlist.html  '<h5>Pesan: </h5>
+  <b>{{pesan}}</b>' untuk menampilkan pesanya nanti
+
+
+
+
 4. Screenshot postman saya lampirkan pada link berikut:
     1. HTML : https://drive.google.com/file/d/1Y62KgZSldfLqTVskX08LVFzGnw6hFl76/view?usp=sharing
 
