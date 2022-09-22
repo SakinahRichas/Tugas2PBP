@@ -1,4 +1,5 @@
 1. Perbedaan JSON, XML, dan HTML
+
     XML bersifat self-descriptive, strukturnya seperti tree, dimulai dari root, branch, dan leaves. file XML harus memiliki sebuah root element yang merupakan parent dari element lainnya. 
 
     Kalau JSON, filenya bersifat self=describing dan sangat mudah dimengerti oleh manusia. Sehingga sering digunakan di aplikasi web dan mobile. Selain itu, format JSON berbentuk text, disimpan dalam bentuk key dan value.
@@ -19,7 +20,7 @@
 
     Setelah itu saya makemigrations, migrate, dan loaddata.
 
-    Selanjutnya, saya membuat template, dengan memasukkan onject2 sesuai dengan onject yang sudah saya buat di model.py.
+    Selanjutnya, saya membuat template, dengan memasukkan object2 sesuai dengan object yang sudah saya buat di model.py.
     Tambahan, saya membuat 2 template, untuk show_html, agar yang ditampilkan data htmlnya saja. 
 
     Lalu, saya lanjut ke view untuk membuat fungsi show_html, show_json, dan show_xml. dan juga menambahkan urlspattern di urls.py dengan path untuk html,xml, dan json yang sudah dibuat sebelumnya di views.py
