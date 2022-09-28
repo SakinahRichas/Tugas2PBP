@@ -1,0 +1,114 @@
+[
+    {
+        "model":"mywatchlist.film",
+        "pk":1,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        
+        }
+
+},
+{
+        "model":"mywatchlist.film",
+        "pk":2,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        }
+    },
+    {
+        "model":"mywatchlist.film",
+        "pk":3,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        }
+    }
+    {
+        "model":"mywatchlist.film",
+        "pk":4,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        }
+    }
+    {
+        "model":"mywatchlist.film",
+        "pk":5,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        }
+    }
+    {
+        "model":"mywatchlist.film",
+        "pk":6,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        }
+    }
+    {
+        "model":"mywatchlist.film",
+        "pk":7,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        }
+    }
+    {
+        "model":"mywatchlist.film",
+        "pk":8,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        }
+    }
+    {
+        "model":"mywatchlist.film",
+        "pk":9,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        }
+    }
+    {
+        "model":"mywatchlist.film",
+        "pk":10,
+        "fields":{
+            "watched":"Sudah",
+            "title":"Laskar Pelangi",
+            "rating": "9.",
+            "release_date": "kakak",
+            "review": "Bikin sakit Maag karena harganya mahal."
+        }
+    }
+]
