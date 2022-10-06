@@ -5,20 +5,28 @@
 {% endblock meta %}
 
 {% block content %}  
-
+<div class="p-3 mb-2 bg-info text-white">Sakinah Richas</div>
 <div class = "login">
     
-    <h1>Formulir Registrasi</h1>  
+    <!-- <h1>Formulir Registrasi</h1>   -->
 
         <form method="POST" >  
             {% csrf_token %}  
-            <table>  
-                {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
-                </tr>  
-            </table>  
+            <div class="mx-auto card align-items-center  text-white bg-info mb-3 w-50" >
+            
+                <div class="card-body">
+                    <h2 class="card-title"> <center>Formulir Registrasi</center></h2>
+                    <table>  
+                        {{ form.as_table }}  
+                        <tr>  
+                            <td></td>
+                            <td><input class="btn btn-light" type="submit" name="submit" value="Daftar"/></td>  
+                        </tr>  
+                    </table> 
+                        
+                </div>
+            </div>
+             
         </form>
 
     {% if messages %}  

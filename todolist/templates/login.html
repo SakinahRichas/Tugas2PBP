@@ -6,40 +6,76 @@
 
 {% block content %}
 
-<div class = "login">
-
-    <h1>Login</h1>
-
-    <form method="POST" action="">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-                    
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
-        </table>
-    </form>
-
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}     
+<!-- <head>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'login.css' %}"/>
+<head> -->
+    
+    <div class="p-3 mb-2 bg-secondary text-white">Sakinah Richas</div>
+    <div class = "login"  >
         
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
 
-</div>
+        
+
+        <!-- <h1>Login</h1> -->
+
+        <form method="POST" action="">
+            {% csrf_token %}
+            <div class="mx-auto card align-items-center  text-white bg-info mb-3 w-50 " >
+            
+                <div class="card-body">
+                    <h2 class="card-title"> <center>Login</center></h2>
+                    
+                        <table>
+                            <tr>
+                                <td>Username: </td>
+                                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+                            </tr>
+                                    
+                            <tr>
+                                <td>Password: </td>
+                                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                
+                                <td></td>
+                                
+                                <td><input class="btn btn-light" type="submit" value="Login" ></td>
+                            
+                            </tr>
+                            
+                        </table>
+                        Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
+
+                </div>
+            </div>
+            <!-- <table>
+                <tr>
+                    <td>Username: </td>
+                    <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+                </tr>
+                        
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input class="btn login_btn" type="submit" value="Login"></td>
+                </tr>
+            </table> -->
+        </form>
+
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}     
+            
+        
+    </div>
 
 {% endblock content %}
