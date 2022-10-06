@@ -25,18 +25,31 @@
 2. Jelaskan tag HTML5 yang kamu ketahui.
 
     <div> = section halaman
+
     <p> = paragraf
+
     <hr> = garis horizontal untuk batas suatu section
+
     <a href=""> = link halaman
+
     <ul> = unordered list
+
     <li> = item dari list
+
     <form> = untuk form
+
     <input> = membuat kolom form
+
     <button> = tombol
+
     <table> = tabel
+
     <tr> = baris tabel
+
     <th> = cell header
+
     <td> = cell biasa
+
     <img> = untuk gambar
 
 
@@ -44,28 +57,28 @@
 3. Jelaskan tipe-tipe CSS selector yang kamu ketahui.
     1. Selector tag, akan memilih berdasarkan nama tag. contoh:
 
-    p{
-        color: pink;
-    }
-    maka semua elemen yang <p> akan menjadi teks pink.
+        p{
+            color: pink;
+        }
+        maka semua elemen yang <p> akan menjadi teks pink.
 
     2. Selector class, akan memilih berdasarkan nama class. COntoh:
-    .login{
-        color:black;
-    }
-    maka class pink akan berubah warna.
+        .login{
+            color:black;
+        }
+        maka class pink akan berubah warna.
 
     3. Selector id, mirip class tapi hanya untuk satu elemen saja. contoh
-    #header{
-        background: black;
-    }
-    yang berubah hanya satu elemen saja, yaitu header.
+        #header{
+            background: black;
+        }
+        yang berubah hanya satu elemen saja, yaitu header.
 
     4. selector universal, untuk menyeleksi semua elemen pada scope tertentu. contoh
-    *{
-        border: 1px;
-    }
-    seluruh border akan beukuran 1px
+        *{
+            border: 1px;
+        }
+        seluruh border akan beukuran 1px
 
 
 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
