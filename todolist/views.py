@@ -1,5 +1,8 @@
 import imp
+from turtle import title
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
+from pytz import timezone
 from todolist.models import Task
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
@@ -9,6 +12,8 @@ from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 
 from todolist.forms import CreateTask
+from django.core import serializers
+import datetime
 # Create your views here.
 
 @login_required(login_url='/todolist/login/')
@@ -20,7 +25,7 @@ def show_todolist(request):
         'todolist' : data_todolist,
         
     }
-    return render (request, "todolist.html", context)
+    return render (request, "todolist_ajax.html", context)
 
 def register(request):
     form = UserCreationForm()
@@ -68,3 +73,33 @@ def create_task(request):
             form = CreateTask(initial={'user': request.user})
     context = {'form':form}
     return render(request, 'createtask.html', context)
+
+
+def show_json(request):
+    data = Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+@login_required(login_url='/todolist/login/')
+def add(request):
+    
+    if request.user.is_authenticated:
+        form = CreateTask(request.POST)
+        response_data = {}
+        if request.method == 'POST' and form.is_valid():
+            title = form.cleaned_data['title']
+            description = form.cleaned_data['description']
+            taskNew = Task.objects.create(title=title, description=description,
+                                                user=request.user, date=datetime.now() )
+            response_data['title'] = title
+            response_data['description'] = description
+            response_data['date'] = datetime.now()
+            taskNew.save()
+            return JsonResponse(response_data)
+
+        context = {
+            'form': form,
+        }
+        return render(request, 'todolist.html', context)
+        
+    else:
+        return redirect('todolist:login')
