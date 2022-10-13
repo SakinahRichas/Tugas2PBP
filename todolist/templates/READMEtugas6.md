@@ -18,3 +18,11 @@
     Membuat modal di file  todolist_ajax.html lalu menggunakan ajax get dan ajax post.
     
     
+Saat saya menjalankan program melalui localhost, tombol add task sudah muncul, tetapi di herokuapp saya tida muncul,
+padahal sudah di deploy. 
+ini tampilan di local host:
+https://drive.google.com/file/d/1ZrQMxuS4YwhdjdWWGm8zEPtDADgDJZiS/view?usp=sharing
+
+dan ini tampilan sudah berhasil deploy:
+https://drive.google.com/file/d/1t2YpkL5pL1dp6nlt8HWOI5wQdy0rexwF/view?usp=sharing
+
