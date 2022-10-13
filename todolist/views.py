@@ -99,7 +99,7 @@ def add(request):
         context = {
             'form': form,
         }
-        return render(request, 'todolist.html', context)
+        return render(request, 'createtask.html', context)
         
     else:
         return redirect('todolist:login')
